@@ -1,3 +1,4 @@
+<script>
 jQuery(document).ready(function(){
 	// grabs the utm's from a url and add them to hidden fields in a .utm_sources div
 	// see if there are any params
@@ -16,3 +17,4 @@ jQuery(document).ready(function(){
 		}
 	}
 });
+</script>
