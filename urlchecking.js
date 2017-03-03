@@ -46,11 +46,20 @@ function checkForBrokenUrls(){
 
 	// checks for broken urls and updates the console.
 	function doneSearching( brokenurls ){
+		// format console logs and print info about links
+		console.log("");
 		if( !brokenUrls.length )
 			console.log("No broken links found.");
 		else {
 			console.log("Some broken links were found.");
-			console.log(brokenurls);
+			for( var i = 0; i < brokenurls.length; i++ ){
+				console.log("");
+				console.log("Broken link: " + brokenurls[i][1]);
+				if( brokenurls[i][0] )
+					console.log("Inner content: " + brokenurls[i][0]);
+				else
+					console.log("Broken link may be an image.");				
+			}
 		}
 	}
 }
