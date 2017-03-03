@@ -47,3 +47,22 @@ function onBottomPage() {
 function logData(trigger) {
 	// ajax call to database to store interactions
 }
+
+
+/*
+
+NOTES:
+------------------------------------
+	API Call
+		Needs 
+			unique id
+			how far was scrolled (1 of 3 buckets)
+			Case Type (below fold, above, ect)
+		Nice to Have
+			Site the request is coming from
+			Browser/Device info
+			Time between calls
+			Total scroll distance 
+------------------------------------
+
+*/

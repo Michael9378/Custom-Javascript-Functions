@@ -32,3 +32,17 @@ function randomCase(str) {
 	}
 	return newStr;
 }
+
+// actual function to capitalize a string
+function capitalize(string) {
+	// split the string on spaces
+  var str = string.split(" ");
+  // return string to hold new string
+  var rtnstr = "";
+  // loop through string
+  for(var i = 0; i < str.length; i++) {
+  	// replace first char in strings to capital and add space at end
+    rtnstr += str[i].charAt(0).toUpperCase() + str[i].substring(1) + " ";
+  }
+  return rtnstr;
+}
